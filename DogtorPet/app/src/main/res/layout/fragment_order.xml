@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.OrderFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/BlankMap"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mapView"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/bg_rounded"
+                android:fontFamily="@font/public_sans_bold"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="@dimen/textTitles" />
+            <TextView
+                android:id="@+id/AdressMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BlankMap"
+                android:layout_centerVertical="true"
+
+                android:fontFamily="@font/public_sans_bold"
+                android:padding="20dp"
+                android:text="Dirección"
+                android:textAlignment="center"
+                android:textSize="@dimen/textTitles" />
+
+
+            <TextView
+                android:id="@+id/Adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AdressMap"
+                android:fontFamily="@font/public_sans_regular1"
+                android:padding="10dp"
+                android:text="Cra. 53a #125-2 a 125-76, Bogotá"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/EmailMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Adress"
+                android:layout_centerVertical="true"
+
+                android:fontFamily="@font/public_sans_bold"
+                android:padding="20dp"
+                android:text="Correo Electrónico"
+                android:textAlignment="center"
+                android:textSize="@dimen/textTitles" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EmailMap"
+                android:fontFamily="@font/public_sans_regular1"
+                android:text="DogtorPet@vet.com"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:id="@+id/PhoneMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Email"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_rounded"
+                android:fontFamily="@font/public_sans_bold"
+                android:padding="20dp"
+                android:text="Telefóno"
+                android:textSize="@dimen/textTitles"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PhoneMap"
+                android:fontFamily="@font/public_sans_regular1"
+                android:text="316221175"
+                android:textAlignment="center"
+
+                />
+
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        </ScrollView>
+
+
+
+
+
+
+</FrameLayout>
