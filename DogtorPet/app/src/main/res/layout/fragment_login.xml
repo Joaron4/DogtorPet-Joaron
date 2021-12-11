@@ -5,7 +5,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_on_primary">
+    android:background="@color/MainBg">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:background="@color/primaryColor"
             android:fontFamily="@font/public_sans_bold"
+            android:textColor="@color/primaryTextColor"
             android:padding="50dp"
             android:text="¿YA TIENES UNA CUENTA?"
             android:textAlignment="center"
@@ -71,6 +72,7 @@
             android:background="@drawable/buttonrounded"
             android:hint="Contraseña"
             android:inputType="textPassword"
+
             android:outlineAmbientShadowColor="#C4C4C44D"
             android:padding="@dimen/PaddingBoxes"
             android:textColor="@color/primaryTextColor" />

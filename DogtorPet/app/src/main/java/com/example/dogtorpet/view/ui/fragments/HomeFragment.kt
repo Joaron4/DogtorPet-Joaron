@@ -46,8 +46,8 @@ class HomeFragment : Fragment(), ProductsListener {
         })
         binding.imageButton3.setOnClickListener{
             binding.imageButton3.animate().apply {
-                duration = 150
-                alpha(0.7f)
+                duration = 100
+                alpha(0.6f)
             }.withEndAction {
                 findNavController().navigate(R.id.navigation_order)
             }

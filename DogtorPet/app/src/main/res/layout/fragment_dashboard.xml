@@ -11,12 +11,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:fontFamily="@font/public_sans_bold"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="122dp"
+        android:src="@drawable/ic_logo_nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/NightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/public_sans_regular1"
+        android:text="Activar Modo Oscuro"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NightDescription"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/NightDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:justificationMode="inter_word"
+        android:text="El modo oscuro es un cambio temporal en la paleta de colores de la aplicación. Al activar el modo oscuro el tradicional fondo blanco con letras negras se reemplaza por una interfaz de color oscuro, que varía entre negro y gris. Además, el brillo también se reduce.  Esta condición fue creada para proporcionar conveniencia a la visión de los usuarios de smartphones, especialmente a los que quedan por largos periodos de tiempo frente a la pantalla del teléfono celular, cómo cuándo utilizamos el Whatsapp. Tal comodidad se nota principalmente cuando se usa en entornos con poca luz."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

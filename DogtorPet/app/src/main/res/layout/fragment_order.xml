@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.ui.fragments.OrderFragment">
+    tools:context=".view.ui.fragments.OrderFragment"
+    android:background="@color/MainBg">
 
 
 
@@ -14,16 +15,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/MainBg"
+        >
 
         <androidx.cardview.widget.CardView
             android:id="@+id/CardMap"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/MainBg"
+            >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@color/MainBg"
             >
 
             <org.osmdroid.views.MapView
@@ -56,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/BlankMap"
                 android:layout_centerVertical="true"
-
+                android:background="@color/MainBg"
                 android:fontFamily="@font/public_sans_bold"
                 android:padding="20dp"
                 android:text="Dirección"
@@ -68,6 +74,7 @@
                 android:id="@+id/Adress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/MainBg"
                 android:layout_below="@id/AdressMap"
                 android:fontFamily="@font/public_sans_regular1"
                 android:padding="10dp"
@@ -80,6 +87,7 @@
                 android:id="@+id/EmailMap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/MainBg"
                 android:layout_below="@id/Adress"
                 android:layout_centerVertical="true"
 
@@ -93,6 +101,7 @@
                 android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/MainBg"
                 android:layout_below="@+id/EmailMap"
                 android:fontFamily="@font/public_sans_regular1"
                 android:text="DogtorPet@vet.com"
@@ -105,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Email"
                 android:layout_centerVertical="true"
-                android:background="@drawable/bg_rounded"
+                android:background="@color/MainBg"
                 android:fontFamily="@font/public_sans_bold"
                 android:padding="20dp"
                 android:text="Telefóno"
@@ -115,10 +124,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/MainBg"
                 android:layout_below="@+id/PhoneMap"
                 android:fontFamily="@font/public_sans_regular1"
                 android:text="316221175"
                 android:textAlignment="center"
+                android:layout_marginBottom="100dp"
 
                 />
 

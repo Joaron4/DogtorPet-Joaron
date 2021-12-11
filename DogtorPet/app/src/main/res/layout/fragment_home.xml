@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textHomeUser"
                 android:fontFamily="@font/public_sans_bold"
-                android:text="¿Qué necesitas hoy?"
+                android:text="Revisa nuestro catálogo"
                 android:textAlignment="center"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="24dp" />

@@ -12,12 +12,14 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.dogtorpet.R
 import com.example.dogtorpet.databinding.ActivityMainBinding
+import com.example.dogtorpet.databinding.FragmentDashboardBinding
 import com.google.android.material.bottomappbar.BottomAppBar
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
     private val REQUEST_PERMISSIONS_REQUEST_CODE = 1
 
 
@@ -32,11 +34,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     fun configNav() {
         val navView: BottomNavigationView = binding.navView
         navView.background = null
         val botView: BottomAppBar = binding.bottomappbar
-        botView.setBackgroundColor(Color.parseColor("#C5F9F9"))
+        botView.setBackgroundColor(getResources().getColor(R.color.primaryColor));
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         navView.setupWithNavController(navController)
 
@@ -59,4 +62,5 @@ class MainActivity : AppCompatActivity() {
                 REQUEST_PERMISSIONS_REQUEST_CODE);
         }
     }
+    
 }
